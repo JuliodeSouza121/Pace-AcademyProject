@@ -125,6 +125,7 @@
     border: 2px solid #8CB36B;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    text-align: center;
 }
 .answer_title{
     color:#8CB36B;
@@ -159,7 +160,9 @@
 .card-img, .mountains {
     width: 100%;
 }
-
+.main_p{
+ text-align: center;
+}
 /*NAME FUCTION PART*/
 nav{
     display: flex;
@@ -175,9 +178,7 @@ nav a:hover{
     background-color:#132B13;
     color: white;
 }
-main section{
-    text-align: center;
-}
+
 main section p{
     box-sizing: border-box;
 }
@@ -190,7 +191,6 @@ main h1{
 main p{
     grid-column: 3/10;
     grid-row: 2;
-    text-align: center;
 }
 /*Background-Colors Part*/
 body{
@@ -282,44 +282,119 @@ footer .social img{
 
 .experimental-grid{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: start;
+    text-align: left;
+    font-size: 25px;
     
 }
 .flexibility {
-    grid-row: 1/2;
-    grid-column: 1/4;
+    grid-column: 4/6;
+    grid-row: 3/4;
+    margin: 30px;
+    
+    
 }
  .online {
-    grid-row: 2/3;
-    grid-column: 1/4;
+    grid-column: 2/4;
+    grid-row: 5/6;
+    margin: 30px;
+    
+    
  }
 
  .teacher{
-    grid-row: 3/4;
-    grid-column: 1/4;
+    grid-column: 4/6;
+    grid-row: 7/8;
+    margin: 30px;
+    
  }
 
  .main-img1{
-    width: 30%;
-    grid-row: 1/2;
-    grid-column: 1/2;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    
+
  }
  .main-img2{
-    width: 30%;
-    grid-row: 2/3;
-    grid-column: 1/2;
+    width: 70%;
+    grid-column: 4/7;
+    grid-row: 5/6;
+    margin-top: 30px;
+
  }
  .main-img3{
-    width: 30%;
-    grid-row: 3/4;
-    grid-column: 1/2;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    margin-top: 30px;
  }
+ .main-img1, .main-img2, .main-img3{
+    box-shadow: 5px 5px 10px #6f7364;
+ }
+.flexibility, .main-img1{
+    margin-top: 50px;
+}
+.page2_p{
+    font-size: 25px;
+}
+.ec-title{
+    grid-column: 2/6;
+    text-align: center;
+}
+.ec-form{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    grid-row: 10/11;
+    grid-column: 1/7;
+    margin-top: 40px;
+    font-size: 15px;
+}
+section section h2{
+    color: #8CB36B;
+}
+.ec-h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
 
- .flexibility h2{
-    grid-row: 3/4;
-    grid-column: 1/2;
- }
+/* Style inputs with type="text", select elements and textareas */
+input[type="tel"],
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  /* Add a background color and some padding around the form */
+
+
+
+
 
 
  /* Promotion CSS */
