@@ -1,6 +1,3 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:ital@1&display=swap');
 
 :root {
@@ -25,153 +22,383 @@ Fonts are separated by a & */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #8CB36B;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+/*ID PART*/
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
 }
-img {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  height: 50%;
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+#content {
+    max-width: 1600px;
+    margin: 0 auto; 
+}
+#hero-msg h2, #hero-msg h4{
+    text-align: center;
+    color: white;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-img{
+    width: 100%;
+}
+#background{
+    height: 725px;
+    background-color: white;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+#logo_link{
+    padding-top: 5px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+/*SECOND CLASS PART*/
+.book, .join{
+    
+    color:white;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book{
+    background-color: #2BB9EF;
+}
+.join{
+    background-color:#A3CEF1;
+}
+.book:hover, .join:hover{
+    background-color:#A3CEF1;
+    color: black;
+}
+.msg{
+    background-color:#2BB9EF;
+    line-height:1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg h2{
+    color: white;
+}
+.msg p{
+    color: white;
+    padding-bottom: 15px;
+}
+.button-box{
+    text-align: center;
+}
+.home-title{
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.logo{
+    width: 80px;
+}
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+    border: 2px solid #8CB36B;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    text-align: center;
+}
+.answer_title{
+    color:#8CB36B;
+}
+.rivers-card{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.mountains{
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.box_quality{
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.card-img, .mountains {
+    width: 100%;
+}
+.main_p{
+ text-align: center;
+}
+/*NAME FUCTION PART*/
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover{
+    background-color:#132B13;
+    color: white;
+}
+
+main section p{
+    box-sizing: border-box;
+}
+main h1{
+    grid-column: 4/9;
+    grid-row: 1;
+    text-align: center;
+    color: #8CB36B;
+}
+main p{
+    grid-column: 3/10;
+    grid-row: 2;
+}
+/*Background-Colors Part*/
+body{
+    background-color:white;
+    font-family:var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:#8CB36B;
+
 }
 h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+    margin: 0;
 }
 
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
+footer{
+    background-color: #8CB36B;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-top: 200px;
 }
-.colors th {
-  background-color: #999;
+footer a:hover{
+    color: white;
 }
-.colors td{
-  width: 25%;
-  height: 3em;
+footer p {
+    font-size: 1.2em;
+    color: white;
+}    
+
+footer .social img{
+    padding-top: 15px;
 }
 
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
 
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+/* Page Experimental Class */
+
+.experimental-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: start;
+    text-align: left;
+    font-size: 25px;
+    
+}
+.flexibility {
+    grid-column: 4/6;
+    grid-row: 3/4;
+    margin: 30px;
+    
+    
+}
+ .online {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    margin: 30px;
+    
+    
+ }
+
+ .teacher{
+    grid-column: 4/6;
+    grid-row: 7/8;
+    margin: 30px;
+    
+ }
+
+ .main-img1{
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    
+
+ }
+ .main-img2{
+    width: 70%;
+    grid-column: 4/7;
+    grid-row: 5/6;
+    margin-top: 30px;
+
+ }
+ .main-img3{
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    margin-top: 30px;
+ }
+ .main-img1, .main-img2, .main-img3{
+    box-shadow: 5px 5px 10px #6f7364;
+ }
+.flexibility, .main-img1{
+    margin-top: 50px;
+}
+.page2_p{
+    font-size: 25px;
+}
+.ec-title{
+    grid-column: 2/6;
+    text-align: center;
+}
+.ec-form{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    grid-row: 10/11;
+    grid-column: 1/7;
+    margin-top: 40px;
+    font-size: 15px;
+}
+section section h2{
+    color: #8CB36B;
+}
+.ec-h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
 }
 
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
+/* Style inputs with type="text", select elements and textareas */
+input[type="tel"],
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Add a background color and some padding around the form */
 
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
 
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
 
-.sitemap {
-  display: grid;
-  justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
 
-  text-align: center;
 
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
+ /* Promotion CSS */
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
+ .group2-lesson, .group3-lesson, .indlesson-img{
+    width: 30%;
+ }
